@@ -11,3 +11,6 @@ resource "aws_s3_bucket" "mytfbucketshirish" {
     name = "mytfbucketshirish"
   }
 }
+resource "aws_vpc" "mytfvpc" {
+  cidr_block = "10.0.0.0/16"
+}
