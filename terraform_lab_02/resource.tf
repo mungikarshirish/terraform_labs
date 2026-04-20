@@ -1,11 +1,11 @@
 resource "aws_instance" "myfirstvm" {
-  ami           = var.ami
-  instance_type = var.instance_type
-  count         = var.instance_count
+  ami           = "ami-0f559c3642608c138"
+  instance_type = "t3.micro"
+  count         = 1
 }
 
-resource "aws_s3_bucket" "mytfbucketshirish0001" {
-  bucket = "mytfbucketshirish0001"
+resource "aws_s3_bucket" "mytfbucketshirish" {
+  bucket = "mytfbucketshirish"
 }
 
 resource "aws_vpc" "mytfvpc" {
